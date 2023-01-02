@@ -1,0 +1,38 @@
+.collapsible {
+   width: 82.5%;
+   margin: 0 auto;
+   margin-bottom: 20px;
+   background-color: #f6f6f6;
+   border-radius: 5px;
+   button {
+      width: 100%;
+      padding: 9px 18px;
+      border: none;
+      background-color: #ff6060;
+      color: #fff;
+      font-size: 24px;
+      border-radius: 5px;
+      display: flex;
+      justify-content: space-between;
+   }
+   img {
+      align-self: center;
+      transform: rotate();
+   }
+   div {
+      padding: 36px 27px 19px 18px;
+      margin-top: -10px;
+      color: #ff6060;
+      font-size: 24px;
+   }
+}
+.lodgingCollapsible {
+   width: 100%;
+   button {
+      padding: 10px 20px;
+      border-radius: 10px;
+   }
+}
+.deploy {
+   transform: rotate(180deg);
+}
