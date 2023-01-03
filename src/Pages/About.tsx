@@ -10,7 +10,7 @@ function About(props: Props) {
 
    return (
       <>
-         <Layout>
+         <Layout currentPage="about">
             <Banner page="about" />
             <Collapsible title="Fiabilité">
                Les annonces postées sur Kasa garantissent une fiabilité totale.

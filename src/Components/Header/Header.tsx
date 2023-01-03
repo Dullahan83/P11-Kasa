@@ -1,15 +1,28 @@
 import Logo from "../../assets/salmonLogo.png";
 import { useNavigate } from "react-router-dom";
 import "./Header.scss";
-function Header() {
+interface Props {
+   currentPage?: string;
+}
+function Header({ currentPage }: Props) {
    const navigate = useNavigate();
    return (
       <header>
          <img src={Logo} alt="" />
          <nav>
             <ul>
-               <li onClick={() => navigate("/")}>Accueil</li>
-               <li onClick={() => navigate("/about")}>A Propos</li>
+               <li
+                  onClick={() => navigate("/")}
+                  className={currentPage === "home" ? "active" : ""}
+               >
+                  Accueil
+               </li>
+               <li
+                  onClick={() => navigate("/about")}
+                  className={currentPage === "about" ? "active" : ""}
+               >
+                  A Propos
+               </li>
             </ul>
          </nav>
       </header>

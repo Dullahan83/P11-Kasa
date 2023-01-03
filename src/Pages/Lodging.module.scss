@@ -34,6 +34,8 @@
          align-items: center;
          column-gap: 10px;
          p {
+            text-align: right;
+            max-width: 100px;
             height: fit-content;
          }
          img {
@@ -42,8 +44,9 @@
          }
       }
       div:last-of-type {
-         margin-top: 21px;
+         margin-top: 32px;
          display: flex;
+         column-gap: 10px;
       }
    }
 }

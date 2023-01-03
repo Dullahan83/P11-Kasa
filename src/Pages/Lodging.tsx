@@ -5,6 +5,7 @@ import Layout from "../Components/Layout/Layout";
 import Tag from "../Components/Tag/Tag";
 import Collapsible from "../Components/Collapsible/Collapsible";
 import style from "./Lodging.module.scss";
+import Star from "../Components/Star/Star";
 interface Props {}
 type lodging = {
    id: string;
@@ -25,8 +26,9 @@ type lodging = {
 function Lodging(props: Props) {
    //    const {} = props;
    const url = new URL(window.location.href);
-   const id = url.pathname.split("logement/")[1];
+   const id: string = url.pathname.split("logement/")[1];
    const [lodgingData, setLodgingData] = useState<lodging>();
+   const maxRating: number = 5;
    const navigate = useNavigate();
 
    const fetchDatas = async () => {
@@ -63,7 +65,20 @@ function Lodging(props: Props) {
                      <p>{lodgingData?.host.name}</p>
                      <img src={lodgingData?.host.picture} alt="" />
                   </div>
-                  <div>Ratings will go there</div>
+                  <div>
+                     {lodgingData &&
+                        Array(Number(lodgingData?.rating))
+                           .fill(null)
+                           .map((value, index) => {
+                              return <Star rated={true} key={index} />;
+                           })}
+                     {lodgingData &&
+                        Array(maxRating - Number(lodgingData?.rating))
+                           .fill(null)
+                           .map((value, index) => {
+                              return <Star key={index} />;
+                           })}
+                  </div>
                </div>
             </div>
             <div className={style.collapsibleContainer}>

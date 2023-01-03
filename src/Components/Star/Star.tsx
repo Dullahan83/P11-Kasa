@@ -1,11 +1,13 @@
 import React from "react";
+import "./Star.css";
+interface Props {
+   rated?: boolean;
+}
 
-interface Props {}
-
-function Star(props: Props) {
+function Star({ rated }: Props) {
    // const {} = props
 
-   return <div></div>;
+   return <i className={rated ? "icon-star rated" : "icon-star"}></i>;
 }
 
 export default Star;

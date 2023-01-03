@@ -4,14 +4,15 @@ import Header from "../Header/Header";
 import style from "./Layout.module.scss";
 interface Props {
    children?: React.ReactNode;
+   currentPage?: string;
 }
 
-function Layout({ children }: Props) {
+function Layout({ children, currentPage }: Props) {
    //    const {} = props;
 
    return (
       <div>
-         <Header />
+         <Header currentPage={currentPage} />
          <div className={style.childContainer}>{children}</div>
          <Footer />
       </div>

@@ -28,7 +28,7 @@ function Home() {
       fetchData();
    }, []);
    return (
-      <Layout>
+      <Layout currentPage="home">
          <Banner page="home">
             <h1>Chez vous, partout et ailleurs</h1>
          </Banner>
