@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import style from "./Collapsible.module.scss";
 import Chevron from "../../assets/Chevron.png";
 interface Props {}
@@ -11,10 +11,17 @@ interface Props {
 
 function Collapsible({ title, children, inLodging }: Props) {
    //    const {} = props;
-   const [isOpen, setIsOpen] = useState(false);
+   const myRef = useRef<HTMLDivElement>(null);
+   const [isOpen, setIsOpen] = useState<boolean>(false);
+   const [height, setHeight] = useState<number>();
    function handleClick() {
       setIsOpen((prev) => !prev);
    }
+   useEffect(() => {
+      isOpen
+         ? setHeight(myRef.current?.getBoundingClientRect().height)
+         : setHeight(0);
+   }, [isOpen]);
    return (
       <div
          className={
@@ -27,7 +34,11 @@ function Collapsible({ title, children, inLodging }: Props) {
             {title}
             <img src={Chevron} alt="" className={`${isOpen && style.deploy}`} />
          </button>
-         {isOpen && <div>{children}</div>}
+         <div className={style.collapsibleContent} style={{ height }}>
+            <div ref={myRef}>
+               <div className={style.children}>{children}</div>
+            </div>
+         </div>
       </div>
    );
 }

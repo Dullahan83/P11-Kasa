@@ -11,7 +11,7 @@ function Layout({ children, currentPage }: Props) {
    //    const {} = props;
 
    return (
-      <div>
+      <div className={style.layoutContainer}>
          <Header currentPage={currentPage} />
          <div className={style.childContainer}>{children}</div>
          <Footer />

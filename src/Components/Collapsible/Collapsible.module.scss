@@ -2,7 +2,8 @@
    width: 82.5%;
    margin: 0 auto;
    margin-bottom: 20px;
-   background-color: #f6f6f6;
+   border-radius: 5px;
+   background-color: #f3f3f3;
    border-radius: 5px;
    button {
       width: 100%;
@@ -19,20 +20,33 @@
       align-self: center;
       transform: rotate();
    }
-   div {
-      padding: 36px 27px 19px 18px;
-      margin-top: -10px;
-      color: #ff6060;
-      font-size: 24px;
-   }
 }
 .lodgingCollapsible {
    width: 100%;
+   border-radius: 10px;
    button {
       padding: 10px 20px;
       border-radius: 10px;
+      font-size: 18px;
+   }
+   .collapsibleContent {
+      .children {
+         font-size: 18px;
+         padding: 30px 12px 40px 20px;
+      }
    }
 }
 .deploy {
    transform: rotate(180deg);
+}
+
+.collapsibleContent {
+   overflow: hidden;
+   transition: height 0.3s;
+   .children {
+      padding: 27px 27px 19px 18px;
+      color: #ff6060;
+      font-size: 24px;
+      line-height: 1.4;
+   }
 }
