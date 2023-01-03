@@ -24,10 +24,12 @@
    }
 
    .socialInfos {
-      width: 20%;
+      width: fit-content;
       padding-top: 24px;
+      padding-bottom: 30px;
       display: flex;
       flex-direction: column;
+      justify-content: space-between;
       div:first-of-type {
          display: flex;
          align-self: flex-end;
@@ -44,15 +46,16 @@
          }
       }
       div:last-of-type {
-         margin-top: 32px;
          display: flex;
          column-gap: 10px;
+         justify-content: flex-end;
       }
    }
 }
 .collapsibleContainer {
    display: flex;
    column-gap: 76px;
+   padding-bottom: 2%;
    div {
       width: 100%;
    }

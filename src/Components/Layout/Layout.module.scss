@@ -1,13 +1,14 @@
 .layoutContainer {
-   background-color: blue;
+   // background-color: blue;
    min-height: 100vh;
    display: flex;
    flex-direction: column;
+   justify-content: space-between;
 }
 .childContainer {
-   padding: 0 100px;
-   margin-bottom: 43px;
+   padding: 0 6.95vw;
+   padding-top: 50px;
    display: flex;
    flex-direction: column;
-   background-color: green;
+   justify-self: flex-start;
 }
