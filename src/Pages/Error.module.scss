@@ -24,7 +24,7 @@
    }
 }
 
-@include tablet {
+@include m-screen {
    .errorContent {
       height: 100%;
       img {
@@ -43,5 +43,5 @@
    }
 }
 
-@include desktop {
+@include l-screen {
 }

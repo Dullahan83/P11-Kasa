@@ -27,15 +27,23 @@
    }
 }
 
-@include tablet {
+@include m-screen {
    .card {
-      width: 340px;
-      height: 340px;
+      width: 47%;
+      height: 255px;
    }
 }
 
-@include desktop {
+@include l-screen {
    .card {
-      width: 340px;
+      // width: 340px;
+      width: clamp(255px, 30%, 340px);
+      aspect-ratio: 1;
+      height: initial;
+   }
+}
+@media screen and (min-width: 992px) and (max-width: 1073px) {
+   .card {
+      width: clamp(255px, 40%, 340px);
    }
 }

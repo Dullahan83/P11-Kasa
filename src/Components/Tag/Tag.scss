@@ -7,7 +7,7 @@
    border-radius: 5px;
    font-size: 10px;
 }
-@include tablet {
+@include m-screen {
    .tag {
       padding: 11px 22px;
       border-radius: 20px;

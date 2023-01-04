@@ -3,13 +3,13 @@
 .aboutContent {
    margin-bottom: 9.5vh;
 }
-@include tablet {
+@include m-screen {
    .aboutContent {
       margin-bottom: 15.65vh;
    }
 }
 
-@include desktop {
+@include l-screen {
    .aboutContent {
       margin-bottom: 15.65vh;
    }

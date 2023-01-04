@@ -51,9 +51,9 @@
    transform: rotate(180deg);
 }
 
-@include tablet {
+@include m-screen {
    .collapsible {
-      width: 82.5%;
+      width: 95%;
       button {
          width: 100%;
          padding: 9px 18px;
@@ -90,5 +90,8 @@
    }
 }
 
-@include desktop {
+@include l-screen {
+   .collapsible {
+      width: 82.5%;
+   }
 }

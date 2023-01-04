@@ -5,7 +5,7 @@
    gap: 20px 0;
    margin-bottom: 43px;
 }
-@include tablet {
+@include m-screen {
    .lodgingsContainer {
       padding: 56px 4%;
       gap: 50px 5%;
@@ -14,5 +14,15 @@
    }
 }
 
-@include desktop {
+@include l-screen {
+   .lodgingsContainer {
+      padding: 56px 4%;
+      gap: 50px 5%;
+      border-radius: 25px;
+   }
+}
+@media screen and (min-width: 992px) and (max-width: 1073px) {
+   .lodgingsContainer {
+      justify-content: center;
+   }
 }
