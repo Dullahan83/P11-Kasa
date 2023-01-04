@@ -1,3 +1,16 @@
+@import "../Utils/mixins";
+
 .aboutContent {
-   margin-bottom: 15.92vh;
+   margin-bottom: 9.5vh;
+}
+@include tablet {
+   .aboutContent {
+      margin-bottom: 15.65vh;
+   }
+}
+
+@include desktop {
+   .aboutContent {
+      margin-bottom: 15.65vh;
+   }
 }

@@ -1,3 +1,4 @@
+@import "../../Utils/mixins";
 .layoutContainer {
    // background-color: blue;
    min-height: 100vh;
@@ -6,9 +7,29 @@
    justify-content: space-between;
 }
 .childContainer {
-   padding: 0 6.95vw;
-   padding-top: 50px;
+   padding: 0 5.34vw;
+   padding-top: 16px;
    display: flex;
    flex-direction: column;
    justify-self: flex-start;
+}
+
+@include tablet {
+   .layoutContainer {
+      // background-color: blue;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+   }
+   .childContainer {
+      padding: 0 6.95vw;
+      padding-top: 50px;
+      display: flex;
+      flex-direction: column;
+      justify-self: flex-start;
+   }
+}
+
+@include desktop {
 }

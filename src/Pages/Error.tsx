@@ -12,7 +12,7 @@ function Error(props: Props) {
       <Layout>
          <div className={style.errorContent}>
             <img src={error} alt="" />
-            <h1>Oups! La page que vous recherchez n'existe pas.</h1>
+            <h1>Oups! La page que vous demandez n'existe pas.</h1>
             <p onClick={() => navigate("/")}>Retourner sur la page d'accueil</p>
          </div>
       </Layout>

@@ -1,9 +1,18 @@
+@import "../../Utils/mixins";
 .lodgingsContainer {
-   padding: 56px 50px;
-   background-color: #f6f6f6;
    display: flex;
    flex-wrap: wrap;
-   gap: 50px 60px;
-   border-radius: 25px;
+   gap: 20px 0;
    margin-bottom: 43px;
+}
+@include tablet {
+   .lodgingsContainer {
+      padding: 56px 4%;
+      gap: 50px 5%;
+      border-radius: 25px;
+      background-color: #f6f6f6;
+   }
+}
+
+@include desktop {
 }

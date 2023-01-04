@@ -1,7 +1,16 @@
+@import "../../Utils/mixins";
+
 .tag {
    background-color: #ff6060;
    color: #fff;
-   padding: 11px 22px;
-   border-radius: 20px;
-   font-size: 14px;
+   padding: 5px 22px;
+   border-radius: 5px;
+   font-size: 10px;
+}
+@include tablet {
+   .tag {
+      padding: 11px 22px;
+      border-radius: 20px;
+      font-size: 14px;
+   }
 }

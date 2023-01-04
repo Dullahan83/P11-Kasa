@@ -29,9 +29,15 @@ i {
 
 .icon-star:before {
    content: "\e900";
-   font-size: 30px;
+   font-size: 15px;
 }
 
 .rated {
    color: #ff6060;
+}
+
+@media screen and (min-width: 768px) {
+   .icon-star:before {
+      font-size: 30px;
+   }
 }

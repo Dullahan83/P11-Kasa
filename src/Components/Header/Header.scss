@@ -1,20 +1,49 @@
+@import "../../Utils/mixins";
+
 header {
-   padding: 0 6.95vw;
-   padding-top: 40px;
+   padding: 0 5.34vw;
+   padding-top: 20px;
    display: flex;
    justify-content: space-between;
+   img {
+      height: 47px;
+   }
    nav {
       display: flex;
       align-items: center;
       ul {
          display: flex;
          list-style: none;
-         column-gap: 57px;
+         column-gap: 10px;
          color: #ff6060;
-         font-size: 24px;
+         font-size: 12px;
       }
    }
 }
+
 .active {
    text-decoration: underline;
+}
+
+@include tablet {
+}
+
+@include desktop {
+   header {
+      padding: 0 6.95vw;
+      padding-top: 40px;
+      display: flex;
+      justify-content: space-between;
+      nav {
+         display: flex;
+         align-items: center;
+         ul {
+            display: flex;
+            list-style: none;
+            column-gap: 57px;
+            color: #ff6060;
+            font-size: 24px;
+         }
+      }
+   }
 }

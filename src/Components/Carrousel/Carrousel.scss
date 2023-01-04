@@ -1,0 +1,64 @@
+@import "../../Utils/mixins";
+
+.carrousel {
+   position: relative;
+   height: 255px;
+   width: 100%;
+   .left,
+   .right {
+      width: 12px;
+      position: absolute;
+      top: 50%;
+   }
+   .left {
+      left: 0;
+      transform: translate(0, -50%);
+      margin-left: 6px;
+   }
+   .mainImage {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      border-radius: 10px;
+   }
+   .right {
+      right: 0;
+      transform: translate(0, -50%) rotate(180deg);
+      margin-right: 6px;
+   }
+   span {
+      display: none;
+   }
+}
+
+@include tablet {
+   .carrousel {
+      height: 415px;
+      .left,
+      .right {
+         top: 50%;
+         width: 46px;
+      }
+      .left {
+         margin-left: 24px;
+      }
+      .mainImage {
+         border-radius: 25px;
+      }
+      .right {
+         margin-right: 25px;
+      }
+      span {
+         display: flex;
+         position: absolute;
+         bottom: 0;
+         left: 50%;
+         transform: translate(-50%, 0);
+         margin-bottom: 25px;
+         color: white;
+      }
+   }
+}
+
+@include desktop {
+}

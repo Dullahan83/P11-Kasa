@@ -1,52 +1,94 @@
+@import "../../Utils/mixins";
 .collapsible {
-   width: 82.5%;
+   width: 100%;
    margin: 0 auto;
    margin-bottom: 20px;
-   border-radius: 5px;
    background-color: #f3f3f3;
    border-radius: 5px;
    button {
       width: 100%;
-      padding: 9px 18px;
+      padding: 6px 12px;
       border: none;
       background-color: #ff6060;
       color: #fff;
-      font-size: 24px;
+      font-size: 13px;
       border-radius: 5px;
       display: flex;
       justify-content: space-between;
    }
    img {
       align-self: center;
-      transform: rotate();
+      width: 15px;
+   }
+   .collapsibleContent {
+      overflow: hidden;
+      transition: height 0.3s;
+      .children {
+         padding: 17px 0 30px 12px;
+         color: #ff6060;
+         font-size: 12px;
+         line-height: 1.4;
+      }
    }
 }
 .lodgingCollapsible {
    width: 100%;
-   border-radius: 10px;
+   border-radius: 5px;
    button {
-      padding: 10px 20px;
-      border-radius: 10px;
-      font-size: 18px;
+      padding: 6px 12px;
+      border-radius: 5px;
+      font-size: 13px;
    }
    .collapsibleContent {
       .children {
-         font-size: 18px;
-         padding: 30px 12px 40px 20px;
+         font-size: 12px;
+         padding: 17px 0 10px 12px;
       }
    }
 }
+
 .deploy {
    transform: rotate(180deg);
 }
 
-.collapsibleContent {
-   overflow: hidden;
-   transition: height 0.3s;
-   .children {
-      padding: 27px 27px 19px 18px;
-      color: #ff6060;
-      font-size: 24px;
-      line-height: 1.4;
+@include tablet {
+   .collapsible {
+      width: 82.5%;
+      button {
+         width: 100%;
+         padding: 9px 18px;
+         font-size: 24px;
+      }
+      img {
+         width: 25px;
+      }
+      .collapsibleContent {
+         .children {
+            padding: 27px 27px 19px 18px;
+            font-size: 24px;
+         }
+      }
    }
+
+   .lodgingCollapsible {
+      width: 100%;
+      border-radius: 10px;
+      button {
+         padding: 10px 20px;
+         border-radius: 10px;
+         font-size: 18px;
+      }
+      .collapsibleContent {
+         .children {
+            font-size: 18px;
+            padding: 30px 12px 40px 20px;
+         }
+      }
+   }
+   .deploy {
+      transform: rotate(180deg);
+   }
+}
+
+@include desktop {
 }
