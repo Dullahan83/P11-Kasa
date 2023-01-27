@@ -4,7 +4,7 @@ import style from "./LodgingContainer.module.scss";
 interface Props {
    list?: Lodging[];
 }
-type Lodging = {
+interface Lodging {
    id: string;
    title: string;
    cover: string;
@@ -18,7 +18,7 @@ type Lodging = {
    location: string;
    equipments: string[];
    tags: string[];
-};
+}
 function LodgingContainer(props: Props) {
    return (
       <section className={style.lodgingsContainer}>

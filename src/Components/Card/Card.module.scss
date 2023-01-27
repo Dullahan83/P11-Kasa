@@ -26,6 +26,9 @@
       font-size: 18px;
    }
 }
+.card:hover {
+   cursor: pointer;
+}
 
 @include m-screen {
    .card {

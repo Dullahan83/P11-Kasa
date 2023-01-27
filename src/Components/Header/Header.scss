@@ -17,6 +17,9 @@ header {
          column-gap: 10px;
          color: #ff6060;
          font-size: 12px;
+         li:hover {
+            cursor: pointer;
+         }
       }
    }
 }

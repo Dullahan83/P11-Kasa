@@ -38,6 +38,9 @@
       .right {
          top: 50%;
          width: 46px;
+         &:hover {
+            cursor: pointer;
+         }
       }
       .left {
          margin-left: 24px;
