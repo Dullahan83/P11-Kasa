@@ -7,6 +7,7 @@ import Collapsible from "../Components/Collapsible/Collapsible";
 import style from "./Lodging.module.scss";
 import Star from "../Components/Star/Star";
 interface Props {}
+
 type lodging = {
    id: string;
    title: string;
