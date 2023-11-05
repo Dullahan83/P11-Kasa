@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/P11-Kasa/static/css/main.75af3fed.css",
-    "main.js": "/P11-Kasa/static/js/main.9a92668c.js",
+    "main.js": "/P11-Kasa/static/js/main.bb61d030.js",
     "static/js/787.f9a29c3b.chunk.js": "/P11-Kasa/static/js/787.f9a29c3b.chunk.js",
     "static/media/AboutBanner.png": "/P11-Kasa/static/media/AboutBanner.b2fe68938afa20622aef.png",
     "static/media/HomeBanner.png": "/P11-Kasa/static/media/HomeBanner.ac3aa7396c2c7cd05e2e.png",
@@ -12,11 +12,11 @@
     "static/media/icomoon.svg?7186nr": "/P11-Kasa/static/media/icomoon.13040fb8b898268fec4e.svg",
     "index.html": "/P11-Kasa/index.html",
     "main.75af3fed.css.map": "/P11-Kasa/static/css/main.75af3fed.css.map",
-    "main.9a92668c.js.map": "/P11-Kasa/static/js/main.9a92668c.js.map",
+    "main.bb61d030.js.map": "/P11-Kasa/static/js/main.bb61d030.js.map",
     "787.f9a29c3b.chunk.js.map": "/P11-Kasa/static/js/787.f9a29c3b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.75af3fed.css",
-    "static/js/main.9a92668c.js"
+    "static/js/main.bb61d030.js"
   ]
 }
